@@ -2,7 +2,27 @@
 // Skriv din pseudokod innanför nedanstående kommentarsblock
 /*
 
+/ START
 
+FUNCTION named splitTheNota(totalAmount, numberOfPeople, tip)
+    totalWithTip = totalAmount * (1 + tip)
+    amountPerPerson = totalWithTip / numberOfPeople
+    RETURN amountPerPerson
+END FUNCTION
+
+FUNCTION named main()
+    SET totalAmount = INPUT("Ange summan: ")
+    SET numberOfPeople = INPUT("Ange antal personer: ")
+    SET tip = INPUT("Ange eventuell dricks i decimalform (t.ex. 10% blir 0.10): ")
+
+    amountPerPerson = CALL FUNCTION splitTheNota(totalAmount, numberOfPeople, tip)
+
+    PRINT("Varje person ska betala: " + amountPerPerson)
+END FUNCTION
+
+CALL FUNCTION main()
+
+/ END
 */
 
 // VG-Version - Lewis Carroll Word Puzzle
